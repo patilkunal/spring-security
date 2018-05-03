@@ -8,8 +8,8 @@
   <name>Spring Security with filter Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <properties>
-		<org.springframework.version>4.2.0.RELEASE</org.springframework.version>
-		<spring-security.version>3.2.7.RELEASE</spring-security.version>
+		<org.springframework.version>4.3.14.RELEASE</org.springframework.version>
+		<spring-security.version>4.2.4.RELEASE</spring-security.version>
 		<javax.servlet-version>3.0.1</javax.servlet-version>
 	</properties>
 	<dependencies>
@@ -36,7 +36,7 @@
 		 <!-- Spring Security Dependencies -->
         <dependency>
             <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-core</artifactId>
+            <artifactId>spring-security-taglibs</artifactId>
             <version>${spring-security.version}</version>
          </dependency> 
          <dependency>
@@ -50,12 +50,24 @@
             <version>${spring-security.version}</version>
           </dependency>
 
-	<dependency>
-		<groupId>javax.servlet</groupId>
-		<artifactId>javax.servlet-api</artifactId>
-		<version>${javax.servlet-version}</version>
-		<scope>provided</scope>
-	</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${javax.servlet-version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- 
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>jstl</artifactId>
+		    <version>1.2</version>
+		</dependency>
+		 -->
+		<dependency>
+		    <groupId>javax.servlet.jsp.jstl</groupId>
+		    <artifactId>jstl-api</artifactId>
+		    <version>1.2</version>
+		</dependency>
 	          
 	</dependencies>
 	<build>
