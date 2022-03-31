@@ -8,7 +8,7 @@
   <name>SpringSecurityUsingSiteMinder Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <properties>
-		<org.springframework.version>4.2.0.RELEASE</org.springframework.version>
+		<org.springframework.version>5.3.18</org.springframework.version>
 		<spring-security.version>4.2.9.RELEASE</spring-security.version>
 		<javax.servlet-version>3.0.1</javax.servlet-version>
 	</properties>
